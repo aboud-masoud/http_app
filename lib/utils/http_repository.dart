@@ -8,7 +8,7 @@ class HttpRepository {
       required String methodName,
       Map<String, dynamic> queryParameters = const {}}) async {
     String baseUrl = "https://helpera.app/";
-    Response response;
+    Response? response;
 
     Dio dioClient = Dio()
       ..options = BaseOptions(
